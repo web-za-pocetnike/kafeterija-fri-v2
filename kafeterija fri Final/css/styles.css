@@ -210,7 +210,6 @@ Animation
 Navbar
 ===============
 /*  hamburger menu */
-/* osnovna pozicija dugmeta */
 #menuToggle
 {
   display: block;
@@ -218,21 +217,18 @@ Navbar
   top: 50px;
   left: 50px;
   z-index: 1;
-  /* animation: bounce 2s ease infinite; */
+ 
 }
-/* ankeri u otvorenom meniju */
 #menuToggle a
 {
   text-decoration: none;
   color: var(--clr-white);
   transition: color 0.3s ease;
 }
-/* bojenje ankera na hover */
 #menuToggle a:hover
 {
   color: var(--clr-primary);
 }
-/* ovo je checkbox koji pozicioniramo na crtice i sakrivamo */
 #menuToggle input
 {
   display: block;
@@ -242,10 +238,9 @@ Navbar
   top: -7px;
   left: -5px;
   cursor: pointer;
-  opacity: 0; /*sakrivamo ga*/
-  z-index: 2; /*stavljamo preko hamburgera*/
+  opacity: 0; 
+  z-index: 2; 
 }
-/* odavde gde se pominje span misli se na crtice tj hamburger stilizuje se i animira sve sta se desava na klik */
 #menuToggle span
 {
   display: block;
@@ -261,7 +256,6 @@ Navbar
               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               opacity 0.55s ease;
 }
-/* ovde cemo koristiti pseudo selektore da ciljamo na ove 3 crtice hamburger menija */
 #menuToggle span:first-child
 {
   transform-origin: 0% 0%;
@@ -271,26 +265,17 @@ Navbar
 {
   transform-origin: 0% 100%;
 }
-/* transformacija crtica u X kada kliknemo na dugme */
-/* prva crta */
 #menuToggle input:checked ~ span
 {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
   background: var(--clr-primary);
 }
-/* druga crta */
-/* nestajanje srednje crtice */
 #menuToggle input:checked ~ span:nth-last-child(3)
 {
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-  /* druga opcija */
-    /* opacity: 1; 
-       transform: translateX(-500px); */
+  opacity: 1; 
+  transform: translateX(-500px);
 }
-/* treca crta  */
-/* rotacija trece crtice da bude X */
 #menuToggle input:checked ~ span:nth-last-child(2)
 {
   transform: rotate(-45deg) translate(0, -1px);
@@ -303,10 +288,8 @@ Navbar
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
-  /* ovo je pozadina otvorenog menija uzeo sam boju sa slike logoa kolor pikerom*/
   background: #20201E;
   list-style-type: none;
-  /* animacija pojavljivanja polako krece pa ubrza */
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
@@ -320,7 +303,6 @@ Navbar
 {
   transform: none;
 }
-/* end of nav menu */
 .nav-link:hover {
   background: var(--clr-primary-light);
   color: var(--clr-primary);
@@ -333,6 +315,7 @@ Navbar
     max-width: 20rem;
   }
 }
+/* end of nav menu */
 /*
 =============== 
 Header
@@ -343,7 +326,6 @@ Header
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../images/pexels-ave-calvar-martinez-4705120.jpg") center/cover no-repeat fixed;
   position: relative;
-  /* animation */
   overflow-x: hidden;
 }
 .banner {
@@ -356,7 +338,6 @@ Header
 .banner h2 {
   font-family: var(--ff-secondary);
   color: var(--clr-primary);
-  /* animation */
   animation: slideFromRight 5s ease-in-out 1;
 }
 .banner h1 {
@@ -364,7 +345,6 @@ Header
   color: var(--clr-white);
   margin-top: 1.25rem;
   margin-bottom: 2rem;
-  /* animation */
   animation: slideFromLeft 5s ease-in-out 1;
 }
 .banner-btn {
