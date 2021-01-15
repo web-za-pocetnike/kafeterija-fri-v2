@@ -360,7 +360,7 @@ Header
   background: linear-gradient(
     to left,
     var(--clr-white),
-    #e9b949,
+     #e9d4a2,
     var(--clr-primary)
   );
 }
@@ -369,7 +369,7 @@ Header
   background: linear-gradient(
     to right,
     var(--clr-white),
-    #e9b949,
+    #e9d4a2,
     var(--clr-primary)
   );
 }
