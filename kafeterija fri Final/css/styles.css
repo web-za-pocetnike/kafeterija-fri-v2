@@ -359,7 +359,16 @@ Header
   height: 0.5rem;
   background: linear-gradient(
     to left,
-    var(--clr-primary),
+    var(--clr-white),
+    #e9b949,
+    var(--clr-primary)
+  );
+}
+.content-divider1 {
+  height: 0.5rem;
+  background: linear-gradient(
+    to right,
+    var(--clr-white),
     #e9b949,
     var(--clr-primary)
   );
@@ -567,7 +576,7 @@ Services
   bottom: 0;
   font-size: 2rem;
   color: var(--clr-primary);
-  background: var(--clr-primary-light);
+  background: var(--clr-grey-10);
   padding: 0.25rem 0.6rem;
   border-radius: 50%;
   transform: translate(-50%, 50%);
