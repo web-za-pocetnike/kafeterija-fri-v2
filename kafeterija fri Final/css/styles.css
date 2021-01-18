@@ -149,7 +149,7 @@ Animation
     transform: scale(1);
   }
   50% {
-    transform: scale(2);
+    transform: scale(1.5);
   }
   100% {
     transform: scale(1);
@@ -383,7 +383,7 @@ Skills
   background: var(--clr-grey-10);
 }
 .skill {
-  padding: 2.5rem 0;
+  padding: 4rem 0;
   text-align: center;
   transition: var(--transition);
 }
@@ -403,9 +403,10 @@ Skills
   background: var(--clr-white);
   box-shadow: 0 2px var(--clr-primary);
 }
+/* ubacena animacija sto je bila na hamburger meniju */
 .skill:hover .skill-icon {
-  transform: translateY(-5px);
-}
+  /* transform: translateY(-5px); */
+     animation: bounce 2s ease infinite;}
 @media screen and (min-width: 576px) {
   .skill {
     float: left;
